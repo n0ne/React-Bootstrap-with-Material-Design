@@ -38,6 +38,14 @@ const DataTableTable = props => {
 
   return (
     <div data-test='datatable-table' className='col-sm-12'>
+       <DataTableHead
+          color={theadColor}
+          textWhite={theadTextWhite}
+          columns={columns}
+          handleSort={handleSort}
+          sortable={sortable}
+          sorted={sorted}
+        />
       <Table
         autoWidth={autoWidth}
         bordered={bordered}
@@ -56,7 +64,6 @@ const DataTableTable = props => {
         className='dataTable'
         {...attributes}
       >
-       
         <TableBody
           color={tbodyColor}
           textWhite={tbodyTextWhite}
@@ -70,14 +77,7 @@ const DataTableTable = props => {
             columns={columns}
           />
         )}
-         <DataTableHead
-          color={theadColor}
-          textWhite={theadTextWhite}
-          columns={columns}
-          handleSort={handleSort}
-          sortable={sortable}
-          sorted={sorted}
-        />
+        
         {children}
       </Table>
     </div>

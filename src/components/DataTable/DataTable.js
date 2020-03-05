@@ -385,7 +385,7 @@ class DataTable extends Component {
     return (
       <div data-test='datatable' className={tableClasses}>
         <div className={`row${barReverse ? ' flex-row-reverse' : ''}`}>
-          <DataTableEntries
+          {/* <DataTableEntries
             paging={paging}
             displayEntries={displayEntries}
             entries={entries}
@@ -393,7 +393,7 @@ class DataTable extends Component {
             entriesArr={entriesOptions}
             label={entriesLabel}
             barReverse={barReverse}
-          />
+          /> */}
           <DataTableSearch
             handleSearchChange={this.handleSearchChange}
             search={search}
@@ -480,6 +480,15 @@ class DataTable extends Component {
               label={infoLabel}
               noRecordsFoundLabel={noRecordsFoundLabel}
             />
+              <DataTableEntries
+            paging={paging}
+            displayEntries={displayEntries}
+            entries={entries}
+            handleEntriesChange={this.handleEntriesChange}
+            entriesArr={entriesOptions}
+            label={entriesLabel}
+            barReverse={barReverse}
+          />
             <DataTablePagination
               activePage={activePage}
               changeActivePage={this.changeActivePage}
