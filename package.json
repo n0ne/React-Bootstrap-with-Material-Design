@@ -2,7 +2,7 @@
   "name": "mdbreact",
   "version": "4.25.3",
   "author": "MDBootstrap",
-  "repository": "https://github.com/mdbootstrap/React-Bootstrap-with-Material-Design",
+  "repository": "https://github.com/n0ne/React-Bootstrap-with-Material-Design",
   "main": "dist/mdbreact.js",
   "module": "dist/mdbreact.esm.js",
   "license": "SEE LICENSE IN <license.pdf>",
